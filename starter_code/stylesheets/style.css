@@ -1,10 +1,322 @@
-/*
-background purple: #540B51
-background ivory: #F3EAE2
-button blue: #4285F4
-titles black: #191817
-paragraph black: #000000
-paragraph yellow: #ECB12F
-links blue: #2E71A6
-footer links grey: #454245
-*/
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+@media screen and (width < 768px) {
+  .navLinks,
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  ul,
+  ol {
+    list-style: none;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 7px;
+    margin: 5px;
+  }
+
+  h1 {
+    color: white;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  header p {
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    margin: 15px 0px 15px 0px;
+  }
+  #yellowSentence {
+    color: yellow;
+  }
+  #slackLogo {
+    width: 30%;
+    height: 7px;
+    margin: 7px;
+  }
+  nav {
+    width: 100%;
+    background-color: #540b51;
+    display: flex;
+    justify-content: space-between;
+  }
+  header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #540b51;
+  }
+  #navigationButtons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  #navigationButtons ul {
+    visibility: hidden;
+  }
+  #navigationButtons button {
+    width: 15px;
+    background-color: #540b51;
+    border: 0px;
+    margin-top: 3px;
+  }
+  .fullImage {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  #googleLogo {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    margin-left: 5px;
+    border-radius: 2px;
+  }
+  #signUp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #signUp button {
+    margin: 5px;
+    font-weight: bold;
+    width: 95%;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 5px;
+  }
+  #googleButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2e71a6;
+    border-color: #2e71a6;
+    border-radius: 5px;
+  }
+  #googleButton span {
+    color: white;
+    margin-right: 18px;
+  }
+  #emailButton {
+    color: #540b51;
+  }
+
+  main {
+    border: 0px;
+    margin: 0px;
+    background-color: #f3eae2;
+  }
+
+  #slackSecurity {
+    text-align: center;
+    font-size: 18px;
+    padding-top: 25px;
+    font-weight: bold;
+  }
+
+  #companyLogos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  #airbnbLogo {
+    width: 20%;
+    height: 25px;
+    margin: 15px;
+  }
+  #nasaLogo {
+    width: 10%;
+    height: 27px;
+    margin: 15px;
+  }
+  #uberLogo {
+    width: 10%;
+    height: 18px;
+    margin: 15px;
+  }
+  #targetLogo {
+    width: 7%;
+    height: 20px;
+    margin: 15px;
+  }
+  #nyLogo {
+    width: 25%;
+    height: 25px;
+    margin: 15px;
+  }
+  #spotifyLogo {
+    width: 20%;
+    height: 25px;
+    margin: 15px;
+  }
+  h2 {
+    margin: 10px;
+    font-size: 30px;
+  }
+  .white {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .benefitsText {
+    margin: 10px;
+    font-size: 20px;
+  }
+  .linkText {
+    margin: 10px;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  .block {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #slackSpeed {
+    margin-bottom: 40px;
+  }
+  h3 {
+    width: 80%;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .white ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .white li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    margin-top: 20px;
+  }
+  .improvements {
+    font-weight: bold;
+  }
+  .white span {
+    font-size: 40px;
+
+    font-weight: bold;
+    color: purple;
+  }
+  .purple {
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+  }
+  #slackTeam {
+    padding-bottom: 60px;
+  }
+  #worldScale {
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+  }
+  #slackTeam div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  #enterprise {
+    color: white;
+    background-color: #540b51;
+    margin: 5px;
+    width: 375px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  #talkSales {
+    color: purple;
+    background-color: white;
+    border: 1px solid purple;
+    margin: 5px;
+    width: 375px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+  #tryFree {
+    color: purple;
+    background-color: white;
+    border: 1px solid white;
+    margin: 5px;
+    width: 350px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+  #talkSales2 {
+    color: white;
+    background-color: purple;
+    border: 1px solid white;
+    margin: 5px;
+    width: 350px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+  .purple h3 {
+    color: white;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  #slackLogo2 {
+    width: 40px;
+    height: 40px;
+    margin: 25px;
+  }
+  #features {
+    display: flex;
+    margin: 10px;
+    gap: 10px;
+    justify-content: space-around;
+  }
+  .footerBlock {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    gap: 15px;
+  }
+  .title {
+    font-weight: bold;
+  }
+  #information {
+    margin: 25px;
+    font-weight: bold;
+  }
+  #downloadLink {
+    color: blue;
+  }
+  #webLinks {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    margin-bottom: 20px;
+  }
+  #rights {
+    text-align: center;
+    font-size: 12px;
+    margin: 25px;
+  }
+}
